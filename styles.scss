@@ -1,0 +1,43 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background-color: bisque;
+}
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: stretch;
+  background-color: #c33;
+}
+.side-menu {
+  width: 350px;
+  height: 100%;
+  background-color: #3cc;
+}
+.main-content {
+  flex: 1;
+  background-color: greenyellow;
+  .section1 {
+    width: 100%;
+    height: 100%;
+    background-color: teal;
+    animation: 2s slideIn;
+    position: relative;
+    animation-timing-function: ease-in;
+    //animation: mymove 5s infinite;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    right: -110%;
+  }
+  90% {
+    right: 10%;
+  }
+  100%{
+    right:0
+  }
+}
