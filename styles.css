@@ -22,13 +22,14 @@ html {
 .main-content {
   flex: 1;
   background-color: greenyellow;
+  overflow: hidden;
 }
 .main-content .section1 {
   width: 100%;
   height: 100%;
   background-color: teal;
-  -webkit-animation: 2s slideIn;
-          animation: 2s slideIn;
+  -webkit-animation: 0.9s slideIn;
+          animation: 0.9s slideIn;
   position: relative;
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;

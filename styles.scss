@@ -19,14 +19,14 @@ html {
 .main-content {
   flex: 1;
   background-color: greenyellow;
+  overflow: hidden;
   .section1 {
     width: 100%;
     height: 100%;
     background-color: teal;
-    animation: 2s slideIn;
+    animation: 0.9s slideIn;
     position: relative;
     animation-timing-function: ease-in;
-    //animation: mymove 5s infinite;
   }
 }
 
