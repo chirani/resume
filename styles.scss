@@ -7,7 +7,7 @@ html {
   color: #202035;
 }
 h1,h2,h3,h4,h5{
-  padding: 0px;
+  padding: 0;
   margin: 0;
 }
 .section1{
@@ -114,4 +114,7 @@ a{
   h2{
     font-size: 32px;
   }
+}
+#intro{
+  z-index: 999;
 }
