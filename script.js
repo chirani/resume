@@ -25,3 +25,11 @@ function SelectSection(selected) {
   el.style.zIndex = 110;
   lastItem = selected;
 }
+let startDate = new Date("04/28/2022");
+let graduationDate = new Date("12/07/2020");
+document.getElementById("days").innerHTML = Math.floor(
+  (debounce - startDate) / (3600 * 1000 * 24)
+);
+document.getElementById("days2").innerHTML = Math.floor(
+  (debounce - graduationDate) / (3600 * 1000 * 24)
+);
