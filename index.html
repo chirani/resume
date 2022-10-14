@@ -13,31 +13,42 @@
       <div class="side-menu">
         <div class="profile-picture"></div>
         <div class="menu">
-          <div class="menu-btn">
+          <div class="menu-btn" onclick="SelectSection('intro')">
             <ion-icon name="hand-left-outline"></ion-icon>
             <p>Intrduction</p>
           </div>
-          <div class="menu-btn">
+          <div class="menu-btn" onclick="SelectSection('portfolio')">
             <ion-icon name="apps"></ion-icon>
             <p>Portfolio</p>
           </div>
-          <div class="menu-btn">
+          <div class="menu-btn" onclick="SelectSection('experience')">
             <ion-icon name="bag-outline"></ion-icon>
             <p>Experience</p>
           </div>
-          <div class="menu-btn">
+          <div class="menu-btn" onclick="SelectSection('education')">
             <ion-icon name="school-outline"></ion-icon>
             <p>Education</p>
           </div>
-          <div class="menu-btn">
-            <ion-icon name="code-download"></ion-icon>
-            <p>Resume</p>
-          </div>
+          <a href="/images/myw3schoolsimage.jpg" download>
+            <div class="menu-btn">
+              <ion-icon name="code-download"></ion-icon>
+              <p>Resume</p>
+            </div>
+          </a>
         </div>
       </div>
       <div class="main-content">
-        <div class="section1" id="into">
+        <div class="section1" id="intro">
           <h1>Hello <span class="undercolored">Visitor!</span></h1>
+        </div>
+        <div class="section1" id="portfolio">
+          <h1>Hello <span class="undercolored">Portfolio!</span></h1>
+        </div>
+        <div class="section1" id="experience">
+          <h1>Hello <span class="undercolored">Experience!</span></h1>
+        </div>
+        <div class="section1" id="education">
+          <h1>Hello <span class="undercolored">Education!</span></h1>
         </div>
       </div>
     </div>

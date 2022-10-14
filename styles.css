@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
-#into h1 {
+.section1 h1 {
   font-size: 48px;
 }
 
@@ -76,12 +76,13 @@ h1, h2, h3, h4, h5 {
   overflow: hidden;
 }
 .main-content .section1 {
-  width: 100%;
+  width: calc(100% - 350px);
   height: 100%;
   background-color: #fcfcfc;
-  -webkit-animation: 1s slideIn;
-          animation: 1s slideIn;
-  position: relative;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
   display: flex;
@@ -105,5 +106,21 @@ h1, h2, h3, h4, h5 {
   }
   100% {
     transform: translateX(0%);
+  }
+}
+@-webkit-keyframes slideOut {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(110%);
+  }
+}
+@keyframes slideOut {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(110%);
   }
 }/*# sourceMappingURL=styles.css.map */

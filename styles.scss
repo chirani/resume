@@ -9,7 +9,7 @@ h1,h2,h3,h4,h5{
   padding: 0px;
   margin: 0;
 }
-#into{
+.section1{
   h1{
     font-size: 48px;
   }
@@ -73,11 +73,13 @@ h1,h2,h3,h4,h5{
   background-color: #a3de4a;
   overflow: hidden;
   .section1 {
-    width: 100%;
+    width: calc(100% - 350px);
     height: 100%;
     background-color: #fcfcfc;
-    animation: 1s slideIn;
-    position: relative;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
     animation-timing-function: ease-in;
     display: flex;
     flex-direction: column;
@@ -92,5 +94,13 @@ h1,h2,h3,h4,h5{
   }
   100%{
     transform:translateX(0%);
+  }
+}
+@keyframes slideOut {
+  0% {
+    transform:translateX(0%);
+  }
+  100%{
+    transform:translateX(110%);
   }
 }
