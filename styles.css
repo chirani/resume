@@ -26,7 +26,6 @@ h1, h2, h3, h4, h5 {
 
 .side-menu {
   width: 350px;
-  height: 100%;
   background-color: #181818;
   display: flex;
   align-items: center;
@@ -91,6 +90,14 @@ h1, h2, h3, h4, h5 {
   align-items: center;
   justify-content: space-evenly;
 }
+.main-content .section1 .presentation {
+  margin: 0 auto;
+  width: 90%;
+}
+.main-content .section1 .presentation h2 {
+  font-size: 28px;
+  text-align: center;
+}
 
 @-webkit-keyframes slideIn {
   0% {
@@ -129,14 +136,60 @@ a {
   text-decoration: none;
 }
 
-#presentation {
-  text-align: center;
-  width: 80%;
-}
-#presentation h2 {
-  font-size: 32px;
-}
-
 #intro {
   z-index: 999;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    background-color: #eee;
+  }
+  .side-menu {
+    flex-direction: column;
+    background-color: #202020;
+    height: auto;
+    margin: 16px;
+    width: inherit;
+    padding: 32px 16px;
+    margin-bottom: 0;
+    border-radius: 8px;
+  }
+  .side-menu .menu {
+    display: none;
+  }
+  .main-content {
+    background-color: #eee;
+    display: flex;
+    display: block;
+    flex-direction: column;
+    width: inherit;
+  }
+  .main-content .section1 {
+    margin: 16px;
+    padding: 32px 16px;
+    position: static;
+    width: inherit;
+    border-radius: 8px;
+  }
+  .main-content .section1 h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .main-content .section1 .presentation {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .main-content .section1 .presentation h2 {
+    font-size: 20px;
+    text-align: center;
+    color: #5d8323;
+  }
+  .main-content > * {
+    position: static;
+  }
 }/*# sourceMappingURL=styles.css.map */
